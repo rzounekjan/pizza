@@ -1,0 +1,6 @@
+{
+  "name": "Pizza Pasta Caffè - Menu & Wishlist",
+  "description": "Interaktivní jídelní lístek Pizza Pasta Caffè v Praze s možností přidání do wishlistu, součtem cen a podporou 13 jazykových mutací.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

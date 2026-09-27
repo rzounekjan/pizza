@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #11100e;
+    color: #ede8df;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-mono, .tabular-nums {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #181614;
+}
+::-webkit-scrollbar-thumb {
+  background: #342e28;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #54493e;
+}
+
+/* Hide scrollbar for category horizontal scroll */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Category slider attention nudge animation (slides right and left 3 times) */
+@keyframes nudge-slider-3x {
+  0% { transform: translateX(0); }
+  12% { transform: translateX(36px); }
+  24% { transform: translateX(0); }
+  36% { transform: translateX(36px); }
+  48% { transform: translateX(0); }
+  60% { transform: translateX(36px); }
+  72% { transform: translateX(0); }
+  100% { transform: translateX(0); }
+}
+
+.animate-nudge-slider-3x {
+  animation: nudge-slider-3x 2.4s cubic-bezier(0.25, 1, 0.5, 1) 0.05s 1 normal forwards;
+}
