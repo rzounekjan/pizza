@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bg" cx="50%" cy="38%" r="62%">
+      <stop offset="0%" stop-color="#2a221b" />
+      <stop offset="65%" stop-color="#181410" />
+      <stop offset="100%" stop-color="#0d0b09" />
+    </radialGradient>
+
+    <!-- Metallic Gold Gradient -->
+    <linearGradient id="gold" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#fff2d6" />
+      <stop offset="25%" stop-color="#e2c589" />
+      <stop offset="60%" stop-color="#c9a96e" />
+      <stop offset="100%" stop-color="#8f6e33" />
+    </linearGradient>
+
+    <!-- Warm Amber Accent -->
+    <linearGradient id="amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- Drop Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+  </defs>
+
+  <!-- Base Squircle -->
+  <rect width="512" height="512" rx="120" fill="url(#bg)" />
+
+  <!-- Outer Elegant Gold Border -->
+  <rect width="480" height="480" x="16" y="16" rx="108" fill="none" stroke="url(#gold)" stroke-width="8" opacity="0.8" />
+
+  <!-- Inner Delicate Dotted Orbit Ring -->
+  <circle cx="256" cy="256" r="218" fill="none" stroke="url(#gold)" stroke-width="3" stroke-dasharray="8 8" opacity="0.3" />
+
+  <!-- Main Emblem Group with Shadow -->
+  <g filter="url(#shadow)">
+    <!-- Aroma / Steam Swirls (Hot Pizza, Fresh Pasta & Espresso Caffè) -->
+    <path d="M 215 135 C 205 105 235 85 220 55" fill="none" stroke="url(#gold)" stroke-width="12" stroke-linecap="round" />
+    <path d="M 256 120 C 246 90 276 70 262 40" fill="none" stroke="url(#gold)" stroke-width="14" stroke-linecap="round" />
+    <path d="M 297 135 C 287 105 317 85 304 55" fill="none" stroke="url(#gold)" stroke-width="12" stroke-linecap="round" />
+
+    <!-- Pizza Crust (Arched top) -->
+    <path d="M 125 190 Q 256 140 387 190 C 375 168 256 122 125 190 Z" fill="url(#gold)" />
+
+    <!-- Pizza Slice Body (Triangle converging to tip) -->
+    <path d="M 134 205 L 256 420 L 378 205 Q 256 168 134 205 Z" fill="url(#gold)" />
+
+    <!-- Pizza Cheese Melt Layer -->
+    <path d="M 148 215 Q 200 232 230 220 Q 256 210 282 220 Q 312 232 364 215 L 256 405 Z" fill="url(#gold)" opacity="0.9" />
+
+    <!-- Delicious Toppings (Pepperoni / Olives) -->
+    <!-- Top Left -->
+    <circle cx="205" cy="245" r="22" fill="#1c1611" stroke="url(#amber)" stroke-width="6" />
+    <!-- Center Right -->
+    <circle cx="295" cy="270" r="20" fill="#1c1611" stroke="url(#amber)" stroke-width="6" />
+    <!-- Lower Center -->
+    <circle cx="245" cy="330" r="18" fill="#1c1611" stroke="url(#amber)" stroke-width="5.5" />
+    <!-- Mini Basil / Olive Accents -->
+    <circle cx="240" cy="260" r="8" fill="#c9a96e" />
+    <circle cx="280" cy="325" r="7" fill="#c9a96e" />
+    <circle cx="210" cy="310" r="6" fill="#c9a96e" />
+
+    <!-- Two Golden Stars Accent at Bottom Flanks -->
+    <polygon points="120,410 126,424 140,424 129,433 133,447 120,438 107,447 111,433 100,424 114,424" fill="url(#gold)" opacity="0.75" />
+    <polygon points="392,410 398,424 412,424 401,433 405,447 392,438 379,447 383,433 372,424 386,424" fill="url(#gold)" opacity="0.75" />
+  </g>
+</svg>
